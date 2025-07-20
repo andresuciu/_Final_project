@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Bascket</h2>
+<ul>
+    {% for item in items %}
+        <li>{{ item.book.title }} - {{ item.quantity }} buc.</li>
+    {% endfor %}
+</ul>
+
+<form method="POST" action="{% url 'checkout' %}">
+    {% csrf_token %}
+    <button type="submit">Finalizeaza comanda</button>
+</form>
+
+{% endblock %}
+
+

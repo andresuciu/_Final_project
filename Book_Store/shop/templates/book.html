@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>{{ book.title }}</h2>
+
+<br><br>
+<img width="200" height="300" src="{{ book.image.url }}" alt="{{ book.title }}">
+
+<br><br>
+
+<a class="add-to-card-button" href="{% url 'add_to_cart' book.id %}">Add to basket</a>
+<br><br>
+<p><strong>Author:</strong> {{ book.author.name }} {{ book.author.surname }}</p>
+<p><strong>Pages:</strong> {{ book.pages }}</p>
+<p><strong>Category:</strong> {{ book.category.name }}</p>
+<p><strong>Publish House:</strong> {{ book.publish_house }}</p>
+<p><strong>Price:</strong> {{ book.price }}</p>
+<p><strong>Stock:</strong> {{ book.stock }}</p>
+<p><strong>Summary:</strong> {{ book.summary }}</p>
+
+
+
+<br><br>
+<br><br>
+
+<a class="back-to-book-list-button"href="{% url 'book-list' %}">Back to book list</a>
+
+{% endblock %}

@@ -1,0 +1,306 @@
+[
+  {
+    "model": "shop.author",
+    "pk": 1,
+    "fields": {
+      "name": "Delia",
+      "surname": "Owens"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 2,
+    "fields": {
+      "name": "Michelle",
+      "surname": "Obama"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 3,
+    "fields": {
+      "name": "Isaac",
+      "surname": "Asimov"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 4,
+    "fields": {
+      "name": "Agatha",
+      "surname": "Christie"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 5,
+    "fields": {
+      "name": "J.R.R.",
+      "surname": "Tolkien"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 6,
+    "fields": {
+      "name": "Jane",
+      "surname": "Austen"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 7,
+    "fields": {
+      "name": "Ken",
+      "surname": "Follett"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 8,
+    "fields": {
+      "name": "Gillian",
+      "surname": "Flynn"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 9,
+    "fields": {
+      "name": "Malcolm",
+      "surname": "Gladwell"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 10,
+    "fields": {
+      "name": "Maya",
+      "surname": "Angelou"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 11,
+    "fields": {
+      "name": "Harper",
+      "surname": "Lee"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 12,
+    "fields": {
+      "name": "Yuval",
+      "surname": "Noah Harari"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 13,
+    "fields": {
+      "name": "Paulo",
+      "surname": "Coelho"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 14,
+    "fields": {
+      "name": "George",
+      "surname": "Orwell"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 15,
+    "fields": {
+      "name": "Suzanne",
+      "surname": "Collins"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 16,
+    "fields": {
+      "name": "Stephen",
+      "surname": "King"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 17,
+    "fields": {
+      "name": "Margaret",
+      "surname": "Atwood"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 18,
+    "fields": {
+      "name": "Brandon",
+      "surname": "Sanderson"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 19,
+    "fields": {
+      "name": "Nicholas",
+      "surname": "Sparks"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 20,
+    "fields": {
+      "name": "Erik",
+      "surname": "Larson"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 21,
+    "fields": {
+      "name": "J.K.",
+      "surname": "Rowling"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 22,
+    "fields": {
+      "name": "Cormac",
+      "surname": "McCarthy"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 23,
+    "fields": {
+      "name": "Dan",
+      "surname": "Brown"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 24,
+    "fields": {
+      "name": "Toni",
+      "surname": "Morrison"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 25,
+    "fields": {
+      "name": "Arthur",
+      "surname": "Conan Doyle"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 26,
+    "fields": {
+      "name": "Leo",
+      "surname": "Tolstoy"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 27,
+    "fields": {
+      "name": "Herman",
+      "surname": "Melville"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 28,
+    "fields": {
+      "name": "Victor",
+      "surname": "Hugo"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 29,
+    "fields": {
+      "name": "Fyodor",
+      "surname": "Dostoevsky"
+    }
+  },
+  {
+    "model": "shop.author",
+    "pk": 30,
+    "fields": {
+      "name": "Ernest",
+      "surname": "Hemingway"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 1,
+    "fields": {
+      "name": "Fictiune"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 2,
+    "fields": {
+      "name": "Biografie"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 3,
+    "fields": {
+      "name": "Science Fiction"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 4,
+    "fields": {
+      "name": "Mister"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 5,
+    "fields": {
+      "name": "Fantastic"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 6,
+    "fields": {
+      "name": "Romantic"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 7,
+    "fields": {
+      "name": "Istoric"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 8,
+    "fields": {
+      "name": "Thriller"
+    }
+  },
+  {
+    "model": "shop.category",
+    "pk": 9,
+    "fields": {
+      "name":"Thriller"
+    }
+  }
+]
+

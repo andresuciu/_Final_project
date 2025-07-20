@@ -1,0 +1,23 @@
+.logout-container{
+    width: 200px;
+    margin: auto;
+    padding: 40px;
+    padding-left: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  h2{
+    text-align: center;
+    margin: auto;
+  }
+
+  input, select, textarea {
+    width: 200px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  

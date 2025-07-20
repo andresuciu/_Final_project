@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="centered-title">Book List</h2>
+
+<div class="table-container">
+
+<table class="table table-border">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Category</th>
+            <th>Publish 
+                <p>House</p>
+                </th>
+            <th>Price</th>
+            <th>Current 
+                <p>stock</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.pk }}</td>
+            <td>
+                {% if book.image %}
+                    <img src="{{ book.image.url }}" alt="{{ book.title }}" width="75">
+                {% else %}
+                    <p>No image</p>
+                {% endif %}
+                <p><a href="{% url 'book-detail' book.pk %}">{{ book.title }}</a></p>
+            </td>
+            <td>{{ book.author.name }} {{ book.author.surname }}</td>
+            <td>{{ book.pages }}</td>
+            <td>{{ book.category.name }}</td>
+            <td>{{ book.publish_house }}</td>
+            <td>{{ book.price }}</td>
+            <td>{{ book.stock }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="7">There are no books at the moment.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+{% endblock %}
+

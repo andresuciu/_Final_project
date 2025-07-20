@@ -1,0 +1,1334 @@
+[
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add author",
+            "content_type": 6,
+            "codename": "add_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change author",
+            "content_type": 6,
+            "codename": "change_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete author",
+            "content_type": 6,
+            "codename": "delete_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view author",
+            "content_type": 6,
+            "codename": "view_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add category",
+            "content_type": 7,
+            "codename": "add_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change category",
+            "content_type": 7,
+            "codename": "change_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete category",
+            "content_type": 7,
+            "codename": "delete_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view category",
+            "content_type": 7,
+            "codename": "view_category"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add order",
+            "content_type": 8,
+            "codename": "add_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change order",
+            "content_type": 8,
+            "codename": "change_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete order",
+            "content_type": 8,
+            "codename": "delete_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view order",
+            "content_type": 8,
+            "codename": "view_order"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add order_ line",
+            "content_type": 9,
+            "codename": "add_order_line"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change order_ line",
+            "content_type": 9,
+            "codename": "change_order_line"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete order_ line",
+            "content_type": 9,
+            "codename": "delete_order_line"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view order_ line",
+            "content_type": 9,
+            "codename": "view_order_line"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add publish house",
+            "content_type": 10,
+            "codename": "add_publishhouse"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change publish house",
+            "content_type": 10,
+            "codename": "change_publishhouse"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete publish house",
+            "content_type": 10,
+            "codename": "delete_publishhouse"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view publish house",
+            "content_type": 10,
+            "codename": "view_publishhouse"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add status",
+            "content_type": 11,
+            "codename": "add_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change status",
+            "content_type": 11,
+            "codename": "change_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete status",
+            "content_type": 11,
+            "codename": "delete_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view status",
+            "content_type": 11,
+            "codename": "view_status"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add book",
+            "content_type": 12,
+            "codename": "add_book"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change book",
+            "content_type": 12,
+            "codename": "change_book"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete book",
+            "content_type": 12,
+            "codename": "delete_book"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view book",
+            "content_type": 12,
+            "codename": "view_book"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 13,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 13,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 13,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 13,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "shop",
+            "model": "author"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "shop",
+            "model": "category"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "shop",
+            "model": "order"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "shop",
+            "model": "order_line"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "shop",
+            "model": "publishhouse"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "shop",
+            "model": "status"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "shop",
+            "model": "book"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "users",
+            "model": "user"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 1,
+        "fields": {
+            "name": "Delia",
+            "surname": "Owens"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 2,
+        "fields": {
+            "name": "Michelle",
+            "surname": "Obama"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 3,
+        "fields": {
+            "name": "Isaac",
+            "surname": "Asimov"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 4,
+        "fields": {
+            "name": "Agatha",
+            "surname": "Christie"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 5,
+        "fields": {
+            "name": "J.R.R.",
+            "surname": "Tolkien"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 6,
+        "fields": {
+            "name": "Jane",
+            "surname": "Austen"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 7,
+        "fields": {
+            "name": "Ken",
+            "surname": "Follett"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 8,
+        "fields": {
+            "name": "Gillian",
+            "surname": "Flynn"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 9,
+        "fields": {
+            "name": "Malcolm",
+            "surname": "Gladwell"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 10,
+        "fields": {
+            "name": "Maya",
+            "surname": "Angelou"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 11,
+        "fields": {
+            "name": "Harper",
+            "surname": "Lee"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 12,
+        "fields": {
+            "name": "Yuval",
+            "surname": "Noah Harari"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 13,
+        "fields": {
+            "name": "Paulo",
+            "surname": "Coelho"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 14,
+        "fields": {
+            "name": "George",
+            "surname": "Orwell"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 15,
+        "fields": {
+            "name": "Suzanne",
+            "surname": "Collins"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 16,
+        "fields": {
+            "name": "Stephen",
+            "surname": "King"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 17,
+        "fields": {
+            "name": "Margaret",
+            "surname": "Atwood"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 18,
+        "fields": {
+            "name": "Brandon",
+            "surname": "Sanderson"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 19,
+        "fields": {
+            "name": "Nicholas",
+            "surname": "Sparks"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 20,
+        "fields": {
+            "name": "Erik",
+            "surname": "Larson"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 21,
+        "fields": {
+            "name": "J.K.",
+            "surname": "Rowling"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 22,
+        "fields": {
+            "name": "Cormac",
+            "surname": "McCarthy"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 23,
+        "fields": {
+            "name": "Dan",
+            "surname": "Brown"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 24,
+        "fields": {
+            "name": "Toni",
+            "surname": "Morrison"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 25,
+        "fields": {
+            "name": "Arthur",
+            "surname": "Conan Doyle"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 26,
+        "fields": {
+            "name": "Leo",
+            "surname": "Tolstoy"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 27,
+        "fields": {
+            "name": "Herman",
+            "surname": "Melville"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 28,
+        "fields": {
+            "name": "Victor",
+            "surname": "Hugo"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 29,
+        "fields": {
+            "name": "Fyodor",
+            "surname": "Dostoevsky"
+        }
+    },
+    {
+        "model": "shop.author",
+        "pk": 30,
+        "fields": {
+            "name": "Ernest",
+            "surname": "Hemingway"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 1,
+        "fields": {
+            "name": "Fictiune"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 2,
+        "fields": {
+            "name": "Biografie"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 3,
+        "fields": {
+            "name": "Science Fiction"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 4,
+        "fields": {
+            "name": "Mister"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 5,
+        "fields": {
+            "name": "Fantastic"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 6,
+        "fields": {
+            "name": "Romantic"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 7,
+        "fields": {
+            "name": "Istoric"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 8,
+        "fields": {
+            "name": "Thriller"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 9,
+        "fields": {
+            "name": "Non Fictiune"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 10,
+        "fields": {
+            "name": "Poezie"
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 1,
+        "fields": {
+            "image": "book_images/acoloundecantaracii_vr3GEi2.jpg",
+            "title": "Acolo unde canta racii",
+            "author": 1,
+            "pages": 384,
+            "category": 1,
+            "publish_house": "Pandora M",
+            "summary": "O poveste emotionanta despre singuratate, natura si supravietuire.",
+            "price": "38.50",
+            "stock": 5
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 2,
+        "fields": {
+            "image": "book_images/povesteamea_xMa7DAG.webp",
+            "title": "Povestea mea",
+            "author": 2,
+            "pages": 448,
+            "category": 2,
+            "publish_house": "Litera",
+            "summary": "Memoriile fostei Prime Doamne a SUA.",
+            "price": "45.00",
+            "stock": 7
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 3,
+        "fields": {
+            "image": "book_images/fundatia.jpg",
+            "title": "Fundatia",
+            "author": 3,
+            "pages": 255,
+            "category": 3,
+            "publish_house": "Paladin",
+            "summary": "Colapsul si reconstructia unui imperiu galactic.",
+            "price": "29.99",
+            "stock": 10
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 4,
+        "fields": {
+            "image": "book_images/crimadinorientexpress_pjFOn4a.jpg",
+            "title": "Crime pe Orient Express",
+            "author": 4,
+            "pages": 296,
+            "category": 4,
+            "publish_house": "All",
+            "summary": "Detectiv celebru rezolva o crima intr un tren de lux.",
+            "price": "34.50",
+            "stock": 4
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 5,
+        "fields": {
+            "image": "book_images/hobittul.jpeg",
+            "title": "Hobbitul",
+            "author": 5,
+            "pages": 310,
+            "category": 5,
+            "publish_house": "Arthur",
+            "summary": "Aventura in Tara de Mijloc.",
+            "price": "39.00",
+            "stock": 12
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 6,
+        "fields": {
+            "image": "book_images/mandriesipedeapsa.jpg",
+            "title": "Mandrie si prejudecata",
+            "author": 6,
+            "pages": 279,
+            "category": 6,
+            "publish_house": "Nemira",
+            "summary": "Poveste de dragoste in Anglia regency.",
+            "price": "32.00",
+            "stock": 6
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 7,
+        "fields": {
+            "image": "book_images/stalpiipamantului.jpg",
+            "title": "Stalpii Pamantului",
+            "author": 7,
+            "pages": 973,
+            "category": 7,
+            "publish_house": "Nemira",
+            "summary": "Constructia unei catedrale in Evul Mediu.",
+            "price": "50.00",
+            "stock": 3
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 8,
+        "fields": {
+            "image": "book_images/fatadisparuta.jpg",
+            "title": "Fata disparuta",
+            "author": 8,
+            "pages": 422,
+            "category": 8,
+            "publish_house": "Polirom",
+            "summary": "Un thriller psihologic cu rasturnari de situatie.",
+            "price": "37.00",
+            "stock": 5
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 9,
+        "fields": {
+            "image": "book_images/exceptionalii.jpg",
+            "title": "Exceptionalii",
+            "author": 9,
+            "pages": 309,
+            "category": 9,
+            "publish_house": "Curtea Veche",
+            "summary": "Analiza succesului si a factorilor care il genereaza.",
+            "price": "42.00",
+            "stock": 8
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 10,
+        "fields": {
+            "image": "book_images/stiudececanta.jpg",
+            "title": "Stiu de ce canta pasarea in colivie",
+            "author": 10,
+            "pages": 289,
+            "category": 9,
+            "publish_house": "Random House",
+            "summary": "Povestea de viata a lui Maya Angelou.",
+            "price": "33.50",
+            "stock": 6
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 11,
+        "fields": {
+            "image": "book_images/sauciziopasarecantatoare.jpg",
+            "title": "Sa ucizi o pasare cantatoare",
+            "author": 11,
+            "pages": 281,
+            "category": 4,
+            "publish_house": "J.B. Lippincott",
+            "summary": "Despre rasism si inocenta copiliei.",
+            "price": "35.00",
+            "stock": 9
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 12,
+        "fields": {
+            "image": "book_images/sapiens_vBBhue2.webp",
+            "title": "Sapiens",
+            "author": 12,
+            "pages": 443,
+            "category": 9,
+            "publish_house": "Publica",
+            "summary": "O istorie a omenirii din perspectiva stiintifica.",
+            "price": "47.00",
+            "stock": 4
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 13,
+        "fields": {
+            "image": "book_images/alchimistul_Jxt5yy8.webp",
+            "title": "Alchimistul",
+            "author": 13,
+            "pages": 208,
+            "category": 1,
+            "publish_house": "Nemira",
+            "summary": "Un tanar pastor pleaca in cautarea destinului.",
+            "price": "31.00",
+            "stock": 11
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 14,
+        "fields": {
+            "image": "book_images/1984_aNC73ri.jpeg",
+            "title": "1984",
+            "author": 14,
+            "pages": 328,
+            "category": 3,
+            "publish_house": "Polirom",
+            "summary": "Societate distopica sub supraveghere permanenta.",
+            "price": "36.00",
+            "stock": 7
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 15,
+        "fields": {
+            "image": "book_images/jocurilefoamei.jpg",
+            "title": "Jocurile foamei",
+            "author": 15,
+            "pages": 374,
+            "category": 3,
+            "publish_house": "Nemira",
+            "summary": "Concurs mortal intr un viitor totalitar.",
+            "price": "38.00",
+            "stock": 10
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 16,
+        "fields": {
+            "image": "book_images/stralucirea.jpeg",
+            "title": "Stralucirea",
+            "author": 16,
+            "pages": 447,
+            "category": 8,
+            "publish_house": "Art",
+            "summary": "Hotel bantuit si spaima.",
+            "price": "40.00",
+            "stock": 5
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 17,
+        "fields": {
+            "image": "book_images/povesteafemeiiservitoare.jpg",
+            "title": "Povestea femeii‑servitoare",
+            "author": 17,
+            "pages": 311,
+            "category": 3,
+            "publish_house": "Lit",
+            "summary": "Regim totalitar care subordoneaza femeile.",
+            "price": "37.00",
+            "stock": 6
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 18,
+        "fields": {
+            "image": "book_images/misborn.jpg",
+            "title": "Mistborn",
+            "author": 18,
+            "pages": 541,
+            "category": 5,
+            "publish_house": "Tor Books",
+            "summary": "Magie, revolutie si furt intr o lume fantastica.",
+            "price": "44.00",
+            "stock": 8
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 19,
+        "fields": {
+            "image": "book_images/jurnaluluneiiubiri.jpeg",
+            "title": "Jurnalul",
+            "author": 19,
+            "pages": 214,
+            "category": 6,
+            "publish_house": "Warner Books",
+            "summary": "O poveste de dragoste autentica si emotionanta.",
+            "price": "34.50",
+            "stock": 9
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 20,
+        "fields": {
+            "image": "book_images/diavoluldinorasulalb.webp",
+            "title": "Diavolul din orasul alb",
+            "author": 20,
+            "pages": 447,
+            "category": 7,
+            "publish_house": "Crown Publishers",
+            "summary": "True crime si istorie in Chicago.",
+            "price": "48.00",
+            "stock": 4
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 21,
+        "fields": {
+            "image": "book_images/piatrafilo_ytDBRXu.jpg",
+            "title": "Harry Potter si piatra filosofala",
+            "author": 21,
+            "pages": 309,
+            "category": 5,
+            "publish_house": "Art",
+            "summary": "Inceputul aventurii lui Harry si Hogwarts.",
+            "price": "45.00",
+            "stock": 15
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 22,
+        "fields": {
+            "image": "book_images/drumul.jpg",
+            "title": "Drumul",
+            "author": 22,
+            "pages": 287,
+            "category": 3,
+            "publish_house": "Art",
+            "summary": "Calatorie intr o lume postapocaliptica.",
+            "price": "36.00",
+            "stock": 6
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 23,
+        "fields": {
+            "image": "",
+            "title": "Codul lui Da Vinci",
+            "author": 23,
+            "pages": 489,
+            "category": 4,
+            "publish_house": "All",
+            "summary": "Mister si conspiratie in jurul artei si Bisericii.",
+            "price": "39.00",
+            "stock": 8
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 24,
+        "fields": {
+            "image": "book_images/iubire.jpg",
+            "title": "Iubire",
+            "author": 24,
+            "pages": 324,
+            "category": 1,
+            "publish_house": "Random House",
+            "summary": "Fantezie si trauma in America post‑rasiala.",
+            "price": "38.00",
+            "stock": 5
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 25,
+        "fields": {
+            "image": "book_images/studiuincarmin.jpg",
+            "title": "Studiu in carmin",
+            "author": 25,
+            "pages": 188,
+            "category": 4,
+            "publish_house": "Ward Lock",
+            "summary": "Prima aparitie a detectivului Holmes.",
+            "price": "28.00",
+            "stock": 7
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 26,
+        "fields": {
+            "image": "book_images/razboisipace.jpg",
+            "title": "Razboi si pace",
+            "author": 26,
+            "pages": 1225,
+            "category": 7,
+            "publish_house": "Lit",
+            "summary": "Roman epic despre razboiul napoleonian.",
+            "price": "55.00",
+            "stock": 3
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 27,
+        "fields": {
+            "image": "book_images/mobydick.jpg",
+            "title": "Moby Dick",
+            "author": 27,
+            "pages": 635,
+            "category": 7,
+            "publish_house": "Arthur",
+            "summary": "Calatoria obsesiva a lui Ahab dupa balena alba.",
+            "price": "42.00",
+            "stock": 4
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 28,
+        "fields": {
+            "image": "",
+            "title": "Victor Hugo – Mizerabilii",
+            "author": 28,
+            "pages": 1463,
+            "category": 7,
+            "publish_house": "Lit",
+            "summary": "Saga despre justitie, dragoste si revolutie.",
+            "price": "60.00",
+            "stock": 2
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 29,
+        "fields": {
+            "image": "book_images/crimasipedeapsa.jpg",
+            "title": "Crima si pedeapsa",
+            "author": 29,
+            "pages": 671,
+            "category": 7,
+            "publish_house": "Lit",
+            "summary": "Un barbat isi infrunta constiinta dupa crima.",
+            "price": "44.00",
+            "stock": 6
+        }
+    },
+    {
+        "model": "shop.book",
+        "pk": 30,
+        "fields": {
+            "image": "book_images/batranulsimarea.jpg",
+            "title": "Batranul si marea",
+            "author": 30,
+            "pages": 127,
+            "category": 7,
+            "publish_house": "Art",
+            "summary": "O lupta simbolica intre om si natura.",
+            "price": "29.00",
+            "stock": 10
+        }
+    }
+]

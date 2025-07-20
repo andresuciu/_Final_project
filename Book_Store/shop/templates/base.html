@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="{% static '../static/base.css' %}" />
+    <link rel="stylesheet" href="{% static '../static/login.css' %}" />
+    <link rel="stylesheet" href="{% static '../static/logout.css' %}" />
+    <link rel="stylesheet" href="{% static '../static/logout_confirmation.css' %}" />
+    <link rel="stylesheet" href="{% static '../static/register.css' %}" />
+  
+  </head>
+
+  <body>
+    <div class="app_container" style="position: relative; width: 100%;">
+    <header class="base_header">
+      <a href="{% url 'login' %}"> Log in </a>
+
+      <div class="profile">
+        {% if user.is_authenticated%}
+             {{ user.username }}
+        {% else %} None 
+        {%endif %}
+      </div>
+    </header>
+
+    <section class="content_container">
+      {% block content %} {% endblock %}
+    </section>
+
+    <footer class="base_footer">
+      <a href="{% url 'logout' %}"> Log Out </a>
+    </footer> 
+    </div>
+
+  </body>
+</html>
