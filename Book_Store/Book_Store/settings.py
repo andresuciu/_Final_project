@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'users',
-    'admin_panel',
+
 ]
 
 MIDDLEWARE = [
@@ -153,7 +153,7 @@ LOGGING = {
 }
 
 LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'book-list'
 LOGOUT_REDIRECT_URL = 'login'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'

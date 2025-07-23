@@ -6,8 +6,8 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth import logout
 from django.views.generic.detail import DetailView
 from django.views import View
-from .models import Book, Author, Category, Order, Order_Line
-
+from .models import Book, Author, Category, Order, Order_Line, Status
+from django.db.models import DO_NOTHING, CASCADE
 from shop.forms import SignUpForm
 
 
@@ -23,7 +23,7 @@ class MainPage(TemplateView):
 
 class CustomLoginView(LoginView):
     template_name = 'login.html'
-    success_url = reverse_lazy('index')
+    success_url = reverse_lazy('book-list')
 
 
 class CustomLogoutView(TemplateView):
@@ -61,26 +61,54 @@ class BookListView(View):
 
 
 class AddToCart(View):
-    def add_to_cart(request, book_id):
+    def get(self, request, book_id):
         book = Book.objects.get(id=book_id)
         order, created = Order.objects.get_or_create(user=request.user, complete=False)
-        order_item, created = OrderItem.objects.get_or_create(order=order, book=book)
-        order_item.quantity += 1
+        order_item, created = Order_Line.objects.get_or_create(order=order, book=book)
+        if created:
+            order_item.quantity = 1 
+        else:
+            order_item.quantity += 1  
         order_item.save()
         return redirect('cart')
+    
 
 class Cart(View):
-    def cart(request):
+    def get(self, request):
         order, created = Order.objects.get_or_create(user=request.user, complete=False)
-        items = order.orderitem_set.all()
-        return render(request, 'cart.html', {'items': items, 'order': order})
+        items = order.items.all()
+        
+        for item in items:
+            item.subtotal = item.quantity * item.book.price  # total per articol
+
+        total_general = sum(item.subtotal for item in items)  # total general
+        order.total_cost = total_general
+        order.save()
+
+        return render(request, 'cart.html', {
+            'items': items,
+            'order': order,
+            'total_general': total_general
+        })
 
 
 class Checkout(View):
-    def checkout(requeste):
-        order = Order.objects.get(user=request.user, complete=False)
-        order.complete = True
-        order.save()
-        return render(request,'checkout_success.html')
+    def get(self, request):
+        order = Order.objects.filter(user=request.user, complete=False).first()
+
+        if not order:
+            return redirect('cart')
+
+        total_general = sum(item.quantity * item.book.price for item in order.items.all())
+        order.total_cost = total_general
+
+        return render(request, 'checkout.html', {
+            'order': order,
+            'total_general': total_general,
+        })
+
+    
+class CheckoutSuccess(TemplateView):
+    template_name = 'checkout_success.html'
 
 

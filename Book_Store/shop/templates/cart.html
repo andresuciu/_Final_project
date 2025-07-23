@@ -1,20 +1,34 @@
-
 {% extends "base.html" %}
 
 {% block content %}
 
-<h2>Bascket</h2>
-<ul>
-    {% for item in items %}
-        <li>{{ item.book.title }} - {{ item.quantity }} buc.</li>
-    {% endfor %}
-</ul>
+<h2>Your bascket</h2>
 
-<form method="POST" action="{% url 'checkout' %}">
-    {% csrf_token %}
-    <button type="submit">Finalizeaza comanda</button>
-</form>
+{% if items %}
+<table>
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.book.title }}</td>
+            <td>{{ item.book.price }} RON</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.subtotal }} RON</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
+<h3>Total: {{ total_general }} RON</h3>
+
+<a href="{% url 'checkout' %}">Finish order</a>
+
+{% endif %}
 {% endblock %}
-
-

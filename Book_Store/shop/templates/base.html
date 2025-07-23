@@ -18,13 +18,16 @@
     <div class="app_container" style="position: relative; width: 100%;">
     <header class="base_header">
       <a href="{% url 'login' %}"> Log in </a>
-
+      
       <div class="profile">
         {% if user.is_authenticated%}
              {{ user.username }}
         {% else %} None 
         {%endif %}
       </div>
+      
+      <a href="{% url 'cart' %}" class="cart-button"> Your Bascket</a>
+
     </header>
 
     <section class="content_container">

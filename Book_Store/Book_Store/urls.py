@@ -19,10 +19,9 @@ from django.urls import path
 from shop.views import MainPage, CustomLoginView, RegisterView, logout_view, CustomLogoutView
 from django.contrib.auth.views import LoginView, LogoutView
 
-from shop.views import BookView, AuthorView, CategoryView, BookListView, AddToCart, Cart, Checkout
+from shop.views import BookView, AuthorView, CategoryView, BookListView, AddToCart, Cart, Checkout, CheckoutSuccess
 from django.conf import settings
 from django.conf.urls.static import static
-from admin_panel.views import admin_dashboard
 
 
 urlpatterns = [
@@ -31,7 +30,7 @@ urlpatterns = [
     path('logout/', logout_view, name='logout'),
     path('logout_confirmation/',CustomLogoutView.as_view(),name='logout_confirmation'),
     path('register/',RegisterView.as_view(),name='register'),
-    path('',MainPage.as_view(), name='index'),
+    path('',BookListView.as_view(),name='book-list'),
     path('authors/',AuthorView.as_view(),name='authors'),
     path('book/<int:pk>/',BookView.as_view(),name='book-detail'),
     path('books/',BookListView.as_view(),name='book-list'),
@@ -39,8 +38,9 @@ urlpatterns = [
     path('add_to_cart/<int:book_id>/', AddToCart.as_view(), name='add_to_cart'),
     path('cart/', Cart.as_view(), name='cart'),
     path('checkout/', Checkout.as_view(), name='checkout'),
+    path('checkout/success/', CheckoutSuccess.as_view(template_name='checkout_success.html'), name='checkout_success'),
     #
-    path('adminpanel/', admin_dashboard, name='adminpanel')
+ 
     
 ]
 

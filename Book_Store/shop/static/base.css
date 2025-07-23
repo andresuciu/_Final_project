@@ -22,6 +22,11 @@ body {
     color: white;
 }
 
+.cart-button {
+    margin-left: auto;
+    background-color: magenta;
+}
+
 .base_footer {
     height: 60px;
     left: 0;
@@ -35,10 +40,8 @@ body {
 }
 
 .profile {
-    width: 80x;
+    width: 80px;
     height: 60px;
-    position: absolute;
-    right: 70px;
     border-radius: 50%;
     background-color: #b22222; 
     text-align: center;
@@ -99,6 +102,26 @@ table th, table td {
 }
 
 .back-to-book-list-button {
+    display: inline-block;
+    background-color: rgb(219, 163, 163);
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.complete-order-button {
+    display: inline-block;
+    background-color: rgb(219, 163, 163);
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.submit-order-button {
     display: inline-block;
     background-color: rgb(219, 163, 163);
     padding: 12px 20px;

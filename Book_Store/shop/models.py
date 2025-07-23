@@ -3,6 +3,7 @@ from django.db.models import Model, DO_NOTHING,CASCADE, DateTimeField, CharField
 from django.conf import settings
 from users.models import User
 
+
 # Create your models here.
 
 class Author(Model):
@@ -50,23 +51,35 @@ class Status(Model):
     
 
 class Order(Model):
-    user=models.ForeignKey(User, on_delete=models.CASCADE)
-    total_cost=DecimalField(max_digits=6, decimal_places=2)
-    date_of_order=DateTimeField()
-    status=ForeignKey(Status, on_delete=DO_NOTHING)
+    user = ForeignKey(User, on_delete=models.CASCADE)
+    total_cost = DecimalField(max_digits=6, decimal_places=2, default=0)
+    date_of_order = DateTimeField(auto_now_add=True)
+    status = ForeignKey(Status, on_delete=models.DO_NOTHING, null=True, blank=True)
+    complete=models.BooleanField(default=False) 
 
     def __str__(self):
-        return ""
+        return f"Comanda #{self.id} - {self.user.username}"
     
 
 class Order_Line(Model):
     book=ForeignKey(Book,on_delete=DO_NOTHING)
-    quantity=IntegerField()
-    total_price=DecimalField(max_digits=6, decimal_places=2)
-    order=ForeignKey(Order, on_delete=CASCADE)
+    quantity=IntegerField(default=1)
+    total_price=DecimalField(max_digits=6, decimal_places=2, default=0)
+    order=ForeignKey(Order, on_delete=CASCADE, related_name='items')
 
     def __str__(self):
-        return ""
+        return f"{self.quantity} x {self.book.title} in Order {self.order.id}"
     
 
+class CartItem(Model):
+    user=models.ForeignKey(User, on_delete=DO_NOTHING)
+    book=ForeignKey(Book, on_delete=DO_NOTHING)
+    qty=IntegerField()
+    
+    def total_price(self):
+        return self.book.price * self.qty
+    
+    def __str__(self):
+        return f"{self.qty} x {self.book.title} in Cart of {self.user.username}"
+    
 
