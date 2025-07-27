@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<a href="{% url 'cart' %}" class="cart-button"> Your Cart</a>
 <h2>{{ book.title }}</h2>
 
 <br><br>

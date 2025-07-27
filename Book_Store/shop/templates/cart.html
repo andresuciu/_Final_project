@@ -2,6 +2,10 @@
 
 {% block content %}
 
+<a class="back-to-book-list-button"href="{% url 'book-list' %}">Back to book list</a>
+<br><br>
+
+
 <h2>Your bascket</h2>
 
 {% if items %}
@@ -28,7 +32,7 @@
 
 <h3>Total: {{ total_general }} RON</h3>
 
-<a href="{% url 'checkout' %}">Finish order</a>
+<a class="complete-order-button" href="{% url 'checkout' %}">Finish order</a>
 
 {% endif %}
 {% endblock %}
